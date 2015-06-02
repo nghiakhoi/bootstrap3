@@ -1,0 +1,62 @@
+body{
+	font-family: 'Open Sans', sans-serif
+}
+
+header, footer{
+	background-color: #333;
+	color: #ddd;
+	padding: 20px;
+	text-align: center;
+}
+
+.tuychontrai{
+	margin-top: 30px;
+	text-align: center;
+}
+
+
+.tuychongiua img{
+	box-shadow: 5px 5px 5px;
+	width: 100%;
+}
+
+.tuychonphai img{
+	box-shadow: 5px 5px 5px;
+	
+}
+
+.tuychongiua p{
+	margin-top: 20px;
+	
+}
+
+.tuychongiua input{
+	margin-top: 20px;
+	
+}
+
+article{
+	margin-top: 70px;
+	margin-bottom: 50px;
+}
+
+.tuychonphai{
+	margin-top: 30px;
+	text-align: center;
+	
+}
+
+.tuychonphai img{
+	border-radius:20px;
+}
+
+.range-list a{
+	color: orange;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px orange;
+}
+
+.range-title{
+	color: blue;
+
+}
