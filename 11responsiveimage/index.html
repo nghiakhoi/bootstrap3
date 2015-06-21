@@ -7,12 +7,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/jquery.fs.wallpaper.css">
 	<link rel="stylesheet" href="css/app.css">
 	
 
 </head>
 <body>
-	<header>
+	<header id="video-youtube">
 		<nav class="navbar navbar-inverse navbar-fixed-top cbp-af-header">
 		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
@@ -42,11 +43,27 @@
 	</header>
 
 	<div class="container-fluid">
+		
+		<div class="row content-filler">			
+		</div>
+		
+
 		<div class="row">
-			<div class="fill-screen" style="background-image: url('images/jinx.jpg');">
+			<div id="video-wallpaper" class="fill-screen fixed-attachment" style="height:600px !important;">
 				
 			</div>
 		</div>
+		<div class="row content-filler">			
+		</div>
+
+		<div class="row">
+			<div class="fill-screen fixed-attachment" style="background-image: url('images/cabal.jpg');">
+				
+			</div>
+		</div>
+		<div class="row content-filler">			
+		</div>
+
 	</div>
 	
 	<footer class="container-fluid">
@@ -57,11 +74,36 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/classie.js"></script>
 	<script src="js/cbpAnimatedHeader.js"></script>
+	<script src="js/jquery.fs.wallpaper.min.js"></script>
 	<script>
 		$(function(){
 			$(window).on("load resize", function() {
 				$('.fill-screen').css('height', window.innerHeight);
 			});
+
+			$("#video-wallpaper").wallpaper({
+			    source: {
+			        poster: "images/jinx.jpg",
+			        mp4: "images/jinxvideo.mp4"
+			        /*,
+			        webm: "http://example.com/video.webm",
+			        ogg: "images/aatrox.swf"*/
+			    }
+			});
+
+			$("#video-youtube").wallpaper({
+			    source: {
+			        poster: "images/cabal.jpg",
+			        video: "//www.youtube.com/embed/ZsTjyo8O_kQ",
+
+			        /*,
+			        webm: "http://example.com/video.webm",
+			        ogg: "images/aatrox.swf"*/
+			    },
+
+			    // mute:false
+			});
+
 		})
 	</script>
 	
